@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 
 function Dashboard() {
@@ -15,6 +15,7 @@ function Dashboard() {
         <button onClick={handleClick}> 
           Move to home page 
         </button>
+        <Outlet />
     </div>
   )
 }
